@@ -16,10 +16,12 @@ class MyApp extends StatelessWidget {
               children: <Widget>[
             CircleAvatar(
               radius: 50.0,
-              backgroundImage: AssetImage('images/shreya.jpeg'),
+              Text(
+                'Photo',
+                )
             ),
             Text(
-                'Shreya Murarka',
+                'Your Name',
               style: TextStyle(
                 fontFamily: 'Pacifico',
                 fontSize: 40.0,
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Text(
-              'FLUTTER DEVELOPER',
+              'DESIGNATION',
               style: TextStyle(
                 fontFamily: 'Source Sans Pro',
                 fontSize: 15.0,
@@ -53,7 +55,7 @@ class MyApp extends StatelessWidget {
                     color: Colors.teal,
                   ),
                   title: Text(
-                    '+917431852322',
+                    'Contact No.',
                     style: TextStyle(
                       color:Colors.teal.shade900,
                       fontFamily: 'Source Sans Pro',
@@ -73,33 +75,19 @@ class MyApp extends StatelessWidget {
                     color: Colors.teal,
                   ),
                   title:Text(
-                    'shreyarng00@gmail.com',
+                    'Mail Id',
                     style: TextStyle(
                       color:Colors.teal.shade900,
                       fontFamily: 'Source Sans Pro',
                       fontSize: 20.0,
                     ),
                   ) ,
-                )
                 ),
+              ),
 
 
 
           ]
-          ),
-        ),
-        drawer: Drawer(
-          child: ListView(
-            padding: EdgeInsets.zero,
-            children: <Widget>[
-              DrawerHeader(
-                child: Text('WELCOME!'),
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                ),
-              ),
-
-            ],
           ),
         ),
       ),
